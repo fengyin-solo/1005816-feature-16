@@ -35,3 +35,23 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.tag { display: inline-block; margin-left: 6px; border-radius: 999px; padding: 1px 8px; font-size: 11px; vertical-align: middle; }
+.tag-history { background: #f1f5f9; color: #475569; border: 1px solid var(--border); }
+.tag-ledger { background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+.muted-text { color: var(--muted); font-size: 12px; }
+.ledger-row { background: #fffdf5; }
+.ledger-panel { margin-top: 18px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.ledger-panel h3 { margin: 0 0 4px; font-size: 15px; }
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal { width: 640px; max-width: calc(100vw - 32px); max-height: calc(100vh - 64px); overflow: auto; background: #fff; border-radius: 10px; box-shadow: 0 18px 48px rgba(15, 23, 42, 0.25); }
+.modal-head { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--border); }
+.modal-head h3 { margin: 0; font-size: 16px; }
+.modal-body { display: flex; flex-wrap: wrap; gap: 12px 16px; padding: 16px 18px 18px; }
+.form-item { flex: 1 1 calc(50% - 16px); display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.form-item-full { flex-basis: 100%; }
+.form-item input, .form-item select { font-size: 13px; color: #1f2937; padding: 7px 9px; border: 1px solid var(--border); border-radius: 6px; background: #fff; }
+.form-item input[readonly] { background: #f8fafc; color: var(--muted); }
+.form-hint { flex-basis: 100%; margin: 0; font-size: 12px; color: var(--muted); }
+.modal-actions { flex-basis: 100%; display: flex; justify-content: flex-end; gap: 10px; }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.link:disabled { opacity: 0.5; cursor: not-allowed; }
