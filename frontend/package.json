@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "test:rules": "node node_modules/typescript/bin/tsc -p tsconfig.test.json && node --no-warnings --experimental-loader ./tests/alias-loader.mjs .tmp-test/tests/sluice.test.js"
   },
   "dependencies": {
     "pinia": "^2.1.7",
